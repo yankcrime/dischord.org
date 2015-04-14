@@ -1,19 +1,25 @@
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
-
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
-paginate:         1
-baseurl:          /
-author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+title:      dischord.org
+tagline:    If credit's what matters, I'll take credit
+url:        http://dischord.org
+baseurl:    /
+permalink:  /:year/:month/:day/:title
 
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/poole/poole
+github_username: yankcrime
+twitter_username: yankcrime
+google_analytics: 'UA-61084998-1'
+flickr:
+    api_key: 167cb17dcb886af997217243c8a6d1a3
+
+# Google analytics
+google_analytics: 'UA-61084998-1'
+
+# About/contact
+author:
+  name:              Nick Jones
+  url:               https://twitter.com/yankcrime
+  email:             nick@dischord.org
+
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
