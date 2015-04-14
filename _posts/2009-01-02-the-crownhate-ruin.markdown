@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: The Crownhate Ruin
 date: 2009-1-2
@@ -23,9 +23,7 @@ comment:
 
 {% blockquote %} 
 
-Some unreleased not very good, poorly recorded The Crownhate Ruin songs with
-Alex joining us, and David Titus Batista on drums. I'll be surprised if you
-enjoy it.
+Some unreleased not very good, poorly recorded The Crownhate Ruin songs with Alex joining us, and David Titus Batista on drums. I'll be surprised if you enjoy it.
 
 {% endblockquote %}
 
