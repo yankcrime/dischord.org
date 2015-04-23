@@ -12,7 +12,7 @@ flickr:
     api_key: 167cb17dcb886af997217243c8a6d1a3
 
 # Google analytics
-google_analytics: 'UA-61084998-1'
+# google_analytics: 'UA-61084998-1'
 
 # About/contact
 author:
