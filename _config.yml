@@ -3,7 +3,9 @@ title:      dischord.org
 tagline:    If credit's what matters, I'll take credit
 url:        http://dischord.org
 baseurl:    /
-permalink:  /:year/:month/:day/:title
+permalink:  /:year/:month/:day/:title/
+
+bitbucket: https://dischord.storage.datacentred.io
 
 github_username: yankcrime
 twitter_username: yankcrime
@@ -23,3 +25,9 @@ author:
 # Dependencies
 markdown:            redcarpet
 highlighter:         pygments
+
+gems:
+  - redcarpet
+  - jekyll-gist
+  - pygments.rb
+  - jekyll-redirect-from

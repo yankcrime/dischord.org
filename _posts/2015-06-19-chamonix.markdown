@@ -1,0 +1,24 @@
+---
+layout: post
+title: Chamonix
+date: 2015-06-19 18:39
+published: true
+---
+[Chris](http://www.chamonixit.com) and Catherine's wedding was the perfect excuse to spend a few days in and around Chamonix.  The weather couldn't have been any better for the big day, but the rest of the time it was a bit hit-and-miss and meant that our trip up the Aiguille du Midi wasn't ideal for sweeping vistas of the valley:
+
+{% flickr_photo 18983394091 "Large" %}
+
+Still, the [ScanmaN](http://dischord.org/misc/minorthreat/scanman.htm) came fully prepared with apple vodka, wine, and baguettes - so what was the problem again exactly?
+
+{% flickr_photo 18792907698 "Large" %}
+
+Here's a few more of my favourites - the rest are on [Flickr](https://www.flickr.com/photos/yankcrime/sets/72157652448859203).
+
+{% flickr_photo 18331933723 "Large" %}
+{% flickr_photo 18764890890 "Large" %}
+{% flickr_photo 18975487882 "Large" %}
+{% flickr_photo 18764917748 "Large" %}
+{% flickr_photo 18764917188 "Large" %}
+
+
+

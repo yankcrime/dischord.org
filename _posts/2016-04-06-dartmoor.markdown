@@ -1,0 +1,21 @@
+---
+layout: post
+title: Dartmoor
+date: 2016-04-06 08:32
+published: true
+---
+
+Dartmoor's a long way to go for weekend's 'glamping' but we did it anyway.
+
+{% flickr_photo 26249502725 "Large" %}
+{% flickr_photo 26233683636 "Large" %}
+{% flickr_photo 26193340101 "Large" %}
+{% flickr_photo 25654824364 "Large" %}
+{% flickr_photo 25986751400 "Large" %}
+{% flickr_photo 26167153472 "Large" %}
+{% flickr_photo 26193344541 "Large" %}
+
+The third shot was taken with my iPhone 6S+.  It's unreal how far cameras in
+phones have come in the last few years.
+
+The last four photos are of the ['Merrivale Rows'](http://www.stone-circles.org.uk/stone/merrivalerows.htm).

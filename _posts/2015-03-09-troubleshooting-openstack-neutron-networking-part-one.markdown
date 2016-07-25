@@ -29,7 +29,7 @@ Get the UUID of your instance either via Horizon or by doing the following:
 
 #### _Network name, UUID, segmentation ID_
 
-You can use Horizon to get the network UUID or use `neutron net-list` and filter by network name.  Once you’ve got the UUID, you can find out the segmentation_id by doing the following:
+You can use Horizon to get the network UUID or use `neutron net-list` and filter by network name.  Once you’ve got the UUID, you can find out the `segmentation_id` by doing the following:
 
 	(openstack)nick@deadline:~> neutron net-show -F provider:segmentation_id 4dc325ed-f141-41d9-8d0a-4f513defacad
 	+--------------------------+-------+
@@ -38,7 +38,7 @@ You can use Horizon to get the network UUID or use `neutron net-list` and filter
 	| provider:segmentation_id | 11 |
 	+--------------------------+-------+
 
-At this point you should convert that segmentation_id into hexadecimal as that’s how it’s referred to in OpenFlow, so in this case 11 = 0xb.  What do we need this for?  All will soon be revealed!
+At this point you should convert that `segmentation_id` into hexadecimal as that’s how it’s referred to in OpenFlow, so in this case 11 = 0xb.  What do we need this for?  All will soon be revealed!
 
 #### _Subnet name, UUID_
 
@@ -127,7 +127,7 @@ We can use the ‘9c4a0ea7’ in this example’s to double check the iptables r
 
 If that looks OK then it’s time to dig a little deeper.  Be warned: You’re almost certainly going to need more coffee.
 
-![Compute node networking](http://docs.openstack.org/admin-guide-cloud/content/figures/14/a/a/common/figures/under-the-hood-scenario-1-ovs-compute.png)
+![Compute node networking](/public/static/under-the-hood-scenario-1-ovs-compute.png)
 
 Remember that each instance’s network interface corresponds with a TAP device on the hypervisor, and that this is connected into a Linux bridge and then from there into an OVS bridge called ‘br-int’.  You can use `brctl show` to show which interfaces are associated with which bridge:
 
@@ -196,9 +196,9 @@ Whoah, that’s a lot of output - so let’s try and break it down.  The rules a
 
 ![OpenFlow table chart](http://assafmuller.files.wordpress.com/2014/01/flow-table-flow-chart.png)
 
-Thanks to Assaf Muller for this diagram.  Really what you’re looking for here is rules in tables that correspond with the segmentation_id (translated into hex, remember!) and a vlan_tag which is internally assigned by OVS but corresponds with the tag associated with a given port.
+Thanks to Assaf Muller for this diagram.  Really what you’re looking for here is rules in tables that correspond with the `segmentation_id` (translated into hex, remember!) and a vlan_tag which is internally assigned by OVS but corresponds with the tag associated with a given port.
 
-If look at what happens with our network’s segmentation_id (27, or 0x1b):
+If look at what happens with our network’s `segmentation_id` (27, or 0x1b):
 
 	root@acid:~# ovs-ofctl dump-flows br-tun | grep 0x1b
 	cookie=0x0, duration=941713.195s, table=2, n_packets=21465888, n_bytes=30396202891, idle_age=5, hard_age=65534, priority=1,tun_id=0x1b actions=mod_vlan_vid:104,resubmit(,10)
@@ -224,7 +224,7 @@ Still with me?  Now that we’re happy traffic is making it from the compute nod
 
 As you’d expect, the configuration of the various Open vSwitch bridges and internals largely mirrors that of what’s on the compute except in reverse.
 
-![Network node](http://docs.openstack.org/admin-guide-cloud/content/figures/14/a/a/common/figures/under-the-hood-scenario-1-ovs-netns.png)
+![Network node](/public/static/under-the-hood-scenario-1-ovs-netns.png)
 
 We know that our dnsmasq instance is running in a network namespace specific to our network’s UUID, how do packets end up there exactly?  The network namespace also has a TAP interface:
 
@@ -242,7 +242,7 @@ Which will be connected to a port on br-int and have an associated tag:
 	       		Interface "tap90752968-96"
 	           		type: internal
 
-Now if we look at the OpenFlow flows with these two bits of context - our internal tag and also the segmentation_id - it should start to make a bit more sense.  The first table to examine is 2:
+Now if we look at the OpenFlow flows with these two bits of context - our internal tag and also the `segmentation_id` - it should start to make a bit more sense.  The first table to examine is 2:
 
 	root@osnet0:~# ovs-ofctl dump-flows br-tun table=2 | grep 0x1b
 	cookie=0x0, duration=421236.766s, table=2, n_packets=133943644, n_bytes=26674991756, idle_age=0, hard_age=65534, priority=1,tun_id=0x1b actions=mod_vlan_vid:22,resubmit(,10)
