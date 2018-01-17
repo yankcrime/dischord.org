@@ -7,6 +7,8 @@ categories:
 
 ---
 
+> ___The principles behind this post still stand, but there's an updated workflow and tooling which solves a few of the problems mentioned below, [described here](http://dischord.org/2016/09/10/more-on-docker-and-puppet/).___
+
 On and off for the last few weeks I've been trying to create a reasonably sane workflow that introduces [Puppet](http://puppetlabs.com) - my favourite configuration management tool - to [Docker](http://docker.com) - everyone's favourite containerization (is that a word?) technology.  I can't say I've really cracked it, I've come up with something functional but it's clear at this point that there's still a long way for existing configuration management tools - and container-based technologies - to go before we've anything reasonably coherent.  In fact, the answer might be something different altogether, but who knows.
 
 This all started because I wanted to review the way in which we deploy some of our OpenStack services that would potentially ease the pain of upgrades when it comes to running multiple services on the same host and isolating resources such as shared python libraries.  This is a mostly solved problem for some operators (i.e using Python virtualenvs), but I fancied trying to do something cleaner and which at the same time would earn us additional geek cred by being able to tout that fact that "yes, we do run Docker" ;)
