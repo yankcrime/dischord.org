@@ -107,6 +107,7 @@ CMD {{ .CMD }}
 
 EXPOSE {{ .EXPOSE }}
 TAG {{ .TAG }}
+{% endraw %}
 ```
 
 And then the YAML data that's used to populate this before it's sent to the Docker build API:

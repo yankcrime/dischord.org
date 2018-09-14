@@ -1,0 +1,24 @@
+---
+layout: post
+title: RIAT 2018
+date: 2018-07-18 22:06
+published: true
+categories: General Photography
+---
+
+Whoah, 2018?!  Here's some photos taken last weekend, whilst stood baking in the sunshine, at RAF Fairford for the Royal International Air Tattoo:
+
+{% flickr_photo 28606888217 "Large" %}
+{% flickr_photo 29622482188 "Large" %}
+{% flickr_photo 42588984985 "Large" %}
+{% flickr_photo 42588977825 "Large" %}
+{% flickr_photo 43445793112 "Large" %}
+{% flickr_photo 42588988545 "Large" %}
+{% flickr_photo 42588976195 "Large" %}
+{% flickr_photo 43445722532 "Large" %}
+{% flickr_photo 41685766370 "Large" %}
+
+There's a bunch more over on [Flickr here](https://flic.kr/s/aHsmjnJ8of).  Be grateful that the album only consists of 87 images - I actually took nearly 1600 photos over the course of two days.
+
+I also came to realise that my Nikon D700 is now nearly 10 years old!  I'm probably due for some kind of upgrade...
+

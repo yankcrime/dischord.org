@@ -222,6 +222,34 @@ img {
   border-radius: 5px;
 }
 
+.image-right
+{
+  max-width: 30%;
+  float: right;
+  margin-bottom: -5px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.image-left
+{
+  max-width: 30%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  float: left;
+}
+
+img:left {
+  max-width: 30%;
+  float: left;
+}
+
+img:right {
+  max-width: 30%;
+  float: right;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;

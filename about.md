@@ -15,3 +15,5 @@ Other people you should check out:
 * [Rob](http://bilco105.com)
 * [Sean](http://www.seanhandley.com/)
 * [Dan](http://thebsdbox.co.uk)
+
+This uses Jekyll and the theme is based on [Poole](https://github.com/poole/) by [Mark Otto](http://www.markdotto.com).  During the course of pairing it back and making it as simple as possible I inadvertently made it look like his own personal site.  I might have even cribbed some of his CSS in order to tidy a few things up, but I doubt he cares.  Credit where credit's due though!

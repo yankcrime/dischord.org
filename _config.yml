@@ -5,16 +5,10 @@ url:        http://dischord.org
 baseurl:    /
 permalink:  /:year/:month/:day/:title/
 
-bitbucket: https://dischord.storage.datacentred.io
-
 github_username: yankcrime
 twitter_username: yankcrime
-google_analytics: 'UA-61084998-1'
 flickr:
-    api_key: 167cb17dcb886af997217243c8a6d1a3
-
-# Google analytics
-# google_analytics: 'UA-61084998-1'
+    api_key: 
 
 # About/contact
 author:
@@ -23,11 +17,11 @@ author:
   email:             nick@dischord.org
 
 # Dependencies
-markdown:            redcarpet
+markdown:            kramdown
 highlighter:         pygments
 
-gems:
-  - redcarpet
+plugins:
+  - kramdown
   - jekyll-gist
   - pygments.rb
   - jekyll-redirect-from

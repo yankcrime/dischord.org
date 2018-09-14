@@ -1,0 +1,23 @@
+---
+layout: post
+title: Linkage
+date: 2018-03-22 20:47
+published: false
+categories: links
+---
+
+> In an effort to inject some life back into my site I've decided to start doing a weekly post in which I link to stuff I've stumbled across from a wide variety of sources that I've found interesting.  Can't say you'll do the same, but at least I tried.
+
+* [Dolch PAC 64](https://jcs.org/2018/03/20/dolch64).  A lovely piece of retro PC history restored to near-mint condition.  Dat USR modem tho.  Really hope Boothy still has mine somewhere...
+
+* [jp](https://github.com/sgreben/jp): Dead simple terminal plots from JSON data.
+
+* [img](https://github.com/genuinetools/img): Standalone, daemon-less, unprivileged Dockerfile and OCI compatible container image builder.  Tooling developed by Jess Frazelle to build container images.  Aside from the aforementioned niceties, it's also quicker than `docker build`.
+
+* [OKLog](https://github.com/oklog/oklog).  A distributed and coordination-free log management system.  I love the considerations for whether or not OKLog is for you, one of which says:
+
+> You just wanna, like, grep your logs — why is this all so complicated?
+
+As someone who's had to operate significant installations of ElasticSearch in the past, this is a question I've repeatedly asked myself.
+
+* [oomd](https://code.fb.com/production-engineering/open-sourcing-oomd-a-new-approach-to-handling-ooms/): A new approach to handling out-of-memory (OOM) situations.

@@ -1,0 +1,17 @@
+--- 
+layout: post
+title: Bushfire
+date: 2010-6-28
+comments: false
+categories: General Photography Music
+link: false
+---
+
+Sweated my arse off in Darmstadt's [Golden Krone](http://www.goldene-krone.de/)
+to take a few shots of these guys playing at the 'Nonstock' warm-up.  Click on
+the small ones below to enlarge, or check out the full set on my Flickr
+account [over here](http://www.flickr.com/photos/yankcrime/sets/72157624367706626/show/).
+
+{% flickr_photo 4737890457 "Large" %}
+{% flickr_photo 4738531624 "Large" %}
+{% flickr_photo 4737886297 "Large" %}
